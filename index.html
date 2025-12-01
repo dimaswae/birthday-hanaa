@@ -1,0 +1,131 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Hana 🎂 9 Years Old</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Opening Letter Overlay -->
+    <div id="letterOverlay" class="letter-overlay active">
+        <div class="envelope-container">
+            <!-- Envelope -->
+            <div class="envelope">
+                <div class="envelope-flap"></div>
+                <div class="envelope-body"></div>
+            </div>
+            
+            <!-- Letter Card (Hidden initially) -->
+            <div class="letter-card hidden">
+                <div class="letter-content">
+                    <div class="letter-title">✨ Surat Spesial Untuk Hana ✨</div>
+                    <div class="letter-text">
+                        <p>Hai Hana, adik cantikku! 💖</p>
+                        <p>Kakak punya surat istimewa untuk merayakan hari spesialmu yang ke-9!</p>
+                        <p>Tekan tombol di bawah untuk membuka hadiah istimewa dari kakak~ 🎁</p>
+                    </div>
+                    <button class="gift-button" id="openGiftBtn">🎁 Buka Hadiah 🎁</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Website -->
+    <main id="mainContent" class="main-content hidden">
+        <!-- Background Music Control -->
+        <div class="music-control">
+            <button id="musicBtn" class="music-btn" title="Toggle Music">
+                <span class="music-icon">🔊</span>
+            </button>
+            <audio id="bgMusic" loop preload="auto">
+                <source src="assets/audio/birthday-music.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+
+        <!-- Section 1: Hero Section -->
+        <section class="section hero-section">
+            <div class="sparkles-container" id="sparklesHero"></div>
+            <div class="hero-content">
+                <div class="hero-image-wrapper">
+                    <img src="assets/img/hana-photo.jpeg" alt="Hana Ayudia Humaira" class="hero-image">
+                </div>
+                <div class="hero-text">
+                    <h1 class="hero-name">Hana Ayudia Humaira</h1>
+                    <p class="hero-subtitle">Happy 9th Birthday! 🎂</p>
+                    <p class="hero-date">1 Desember 2024</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Ucapan -->
+        <section class="section ucapan-section">
+            <div class="sparkles-container" id="sparklesUcapan"></div>
+            <div class="ucapan-content">
+                <h2 class="section-title">Ucapan Kakak Untuk Hana 💌</h2>
+                <div class="ucapan-text">
+                    <p class="fade-in-text">Dear Hana,</p>
+                    <p class="fade-in-text">Selamat ulang tahun yang ke-9 yaa adik cantikku~</p>
+                    <p class="fade-in-text">Kakak cuma mau bilang kalau kakak bangga banget sama Hana.</p>
+                    <p class="fade-in-text">Semoga Hana tumbuh jadi anak yang makin pintar, makin baik hatinya, makin ceria, dan selalu dilindungi Allah di setiap langkahnya.</p>
+                    <p class="fade-in-text">Semoga semua impian Hana pelan-pelan jadi kenyataan.</p>
+                    <p class="fade-in-text highlight">Kakak sayang banget sama Hana ❤️</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Doa -->
+        <section class="section doa-section">
+            <div class="doa-content">
+                <h2 class="section-title">Doa Kakak Untuk Hana 🤲</h2>
+                <div class="doa-box">
+                    <p class="doa-text">
+                        Barakallahu fii umrik, semoga menjadi anak yang shalihah, sehat selalu, panjang umur, dan membawa kebahagiaan untuk keluarga.
+                    </p>
+                </div>
+                <div class="heart-particles" id="heartParticles"></div>
+            </div>
+        </section>
+
+        <!-- Section 4: Memory Gallery -->
+        <section class="section gallery-section">
+            <div class="gallery-content">
+                <h2 class="section-title">Kenangan Bersama Hana 📸</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-card">
+                        <img src="assets/img/photo-placeholder-1.jpeg" alt="Memory 1">
+                        <p class="photo-caption">Momen Manis</p>
+                    </div>
+                    <div class="gallery-card">
+                        <img src="assets/img/photo-placeholder-2.jpeg" alt="Memory 2">
+                        <p class="photo-caption">Senyuman Ceria</p>
+                    </div>
+                    <div class="gallery-card">
+                        <img src="assets/img/photo-placeholder-3.jpeg" alt="Memory 3">
+                        <p class="photo-caption">Kebersamaan</p>
+                    </div>
+                    <div class="gallery-card">
+                        <img src="assets/img/photo-placeholder-4.jpeg" alt="Memory 4">
+                        <p class="photo-caption">Petualangan</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Closing -->
+        <section class="section closing-section">
+            <div class="confetti-container" id="confetti"></div>
+            <div class="closing-content">
+                <div class="closing-heart-animation"></div>
+                <h2 class="closing-text">Dari Kakak, dengan banyak cinta 💖</h2>
+                <p class="closing-date">Dibuat dengan penuh kasih sayang pada 1 Desember 2024</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="script/script.js"></script>
+</body>
+</html>
